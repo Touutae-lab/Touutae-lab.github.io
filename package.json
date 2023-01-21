@@ -1,0 +1,23 @@
+{
+  "name": "touutae-site",
+  "version": "1.0.0",
+  "description": "A personal website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./sass/main.scss ./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Touutae-lab/personal-website.git"
+  },
+  "author": "Pantakan Kanprawet",
+  "email": "pantakan.totae@gmail.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Touutae-lab/personal-website/issues"
+  },
+  "homepage": "https://github.com/Touutae-lab/personal-website#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
