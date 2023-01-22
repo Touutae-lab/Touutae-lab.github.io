@@ -17,7 +17,7 @@ Have fun creating your portfolio on this template!!! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Title: add your Portfolio websites's title here -->
-    <title>Pantakan Kanprawet | DevOps</title>
+    <title>Pantakan Kanprawet | DevOps </title>
 
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="DevOps, Pantakan Kanprawet, skill" />
@@ -64,25 +64,44 @@ Have fun creating your portfolio on this template!!! -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || []
         function gtag() {
-            dataLayer.push(arguments);
+            dataLayer.push(arguments)
         }
-        gtag("js", new Date());
+        gtag('js', new Date())
 
-        gtag("config", "UA-122228201-4");
+        gtag('config', 'UA-122228201-4')
     </script>
     <!-- End of Google Analytics -->
 </head>
 
 <body>
+    <!-- Navigation -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li id="__about" class="navigation__item"><a href="#about" class="navigation__link">About Me</a></li>
+                <li id="__project" class="navigation__item"><a href="#projects" class="navigation__link">Project</a>
+                </li>
+                <li class="navigation__item"><a href="https://www.pantakan.com/Touutae-lab/"
+                        class="navigation__link">Resume</a></li>
+                <li id="__contact" class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <!-- Hero Section -->
     <div id="hero">
         <section class="container">
             <h1 class="hero-title">
-                Hi, my name is <span class="text-color-main name">Patakan Kanprawet</span>
+                Hi, my name is
+                <span class="text-color-main name">Patakan Kanprawet</span>
                 <br />
-                I'm the DevOps.
+                I'm the Junior DevOps Engineer.
             </h1>
             <p class="hero-cta">
                 <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
@@ -100,23 +119,35 @@ Have fun creating your portfolio on this template!!! -->
             <h2 class="section-title">About Me</h2>
             <div class="row about-wrapper">
                 <div class="about-wrapper__image">
-                    <img class="img-fluid" src="./assets/profile.png" alt="Profile Image" />
+                    <img class="img-fluid" src="./assets/profile.jpg" alt="Profile Image" />
                 </div>
                 <div class="about-wrapper__info">
-                    <p class="about-wrapper__info-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Temporibus quae repellat, ad omnis distinctio velit saepe expedita
-                        architecto cumque veritatis adipisci. Sapiente non, saepe hic
-                        adipisci doloribus quisquam recusandae et.
-                    </p>
-                    <p class="about-wrapper__info-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                        obcaecati doloribus qui praesentium quae veniam esse mollitia
-                        consequuntur nisi minima quasi et fugit quidem enim recusandae
-                        delectus, iusto culpa rerum?
-                    </p>
+                    <div class="about-wrapper__info-text-wrapper">
+                        <p class="about-wrapper__info-text">
+                            Welcome to my personal website! My name is Pantakan Kanprawet and I am a developer from
+                            Thailand. I
+                            hold a degree in Computer Science from Chiang Mai University and have been study in the
+                            field
+                            for several years.
+
+                        </p>
+                        <p class="about-wrapper__info-text">
+                            As a developer, I specialize in DevOps & Automation and I am dedicated to creating
+                            innovative
+                            and efficient solutions for clients. I am passionate about technology and always strive
+                            to
+                            stay
+                            up-to-date with the latest developments in the field.
+                            On this website, you'll find my portfolio, blog, and contact information. Feel free to
+                            take
+                            a
+                            look around and reach out to me if you're interested in working together. Thank you for
+                            visiting!
+                        </p>
+                    </div>
                     <span class="about-wrapper__cta">
-                        <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+                        <a href="https://www.pantakan.com/Touutae-lab" target="_blank"
+                            class="cta-btn cta-btn--resume">View Resume</a>
                     </span>
                 </div>
             </div>
@@ -133,86 +164,36 @@ Have fun creating your portfolio on this template!!! -->
                 <!-- Each .row is a project -->
                 <article class="row">
                     <div class="project-wrapper__text">
-                        <h3 class="project-wrapper__text-title">Project Title</h3>
+                        <h3 class="project-wrapper__text-title">
+                            Jenkins-DockerCompose
+                        </h3>
                         <p class="project-wrapper__text-info">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                            necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                            sint saepe nostrum! Enim, perferendis.
+                            Simplify your Jenkins setup process by utilizing a containerized environment and the
+                            convenience of a Docker-Compose file on your machine
                         </p>
                         <div class="project-wrapper__text-btns">
                             <a href="#" target="_blank" rel="noopener noreferrer"
-                                class="cta-btn cta-btn--hero cta-btn--projects">See
-                                Live</a>
-                            <a href="#" target="_blank" class="cta-btn text-color-main">Source Code</a>
+                                class="cta-btn cta-btn--hero cta-btn--projects">Source code</a>
                         </div>
                     </div>
-
-                    <div class="project-wrapper__image">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <div class="thumbnail rounded">
-                                <img src="./assets/project.png" class="img-fluid" alt="Project Image" />
-                            </div>
-                        </a>
-                    </div>
                 </article>
-                <!-- /END Project -->
-
-                <!-- Each .row is a project -->
                 <article class="row">
                     <div class="project-wrapper__text">
-                        <h3 class="project-wrapper__text-title">Project Title</h3>
+                        <h3 class="project-wrapper__text-title">
+                            Jenkins-DockerCompose
+                        </h3>
                         <p class="project-wrapper__text-info">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                            necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                            sint saepe nostrum! Enim, perferendis.
+                            Simplify your Jenkins setup process by utilizing a containerized environment and the
+                            convenience of a Docker-Compose file on your machine
                         </p>
                         <div class="project-wrapper__text-btns">
                             <a href="#" target="_blank" rel="noopener noreferrer"
-                                class="cta-btn cta-btn--hero cta-btn--projects">See
-                                Live</a>
-                            <a href="#" target="_blank" class="cta-btn text-color-main">Source Code</a>
+                                class="cta-btn cta-btn--hero cta-btn--projects">Source code</a>
                         </div>
-                    </div>
-
-                    <div class="project-wrapper__image">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <div class="thumbnail rounded">
-                                <img src="./assets/project.png" class="img-fluid" alt="Project Image" />
-                            </div>
-                        </a>
                     </div>
                 </article>
                 <!-- /END Project -->
 
-                <!-- Each .row is a project -->
-                <article class="row">
-                    <div class="project-wrapper__text">
-                        <h3 class="project-wrapper__text-title">Project Title</h3>
-                        <p class="project-wrapper__text-info">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                            necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                            sint saepe nostrum! Enim, perferendis.
-                        </p>
-                        <div class="project-wrapper__text-btns">
-                            <a href="#" target="_blank" rel="noopener noreferrer"
-                                class="cta-btn cta-btn--hero cta-btn--projects">See
-                                Live</a>
-                            <a href="#" target="_blank" class="cta-btn text-color-main">Source Code</a>
-                        </div>
-                    </div>
-
-                    <div class="project-wrapper__image">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <div class="thumbnail rounded">
-                                <img src="./assets/project.png" class="img-fluid" alt="Project Image" />
-                            </div>
-                        </a>
-                    </div>
-                </article>
-                <!-- /END Project -->
             </div>
         </div>
     </section>
@@ -223,8 +204,12 @@ Have fun creating your portfolio on this template!!! -->
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <div class="contact-wrapper">
-                <p class="contact-wrapper__text">[Put your call to action here]</p>
-                <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
+                <p class="contact-wrapper__text">
+                    To contact me, please consider using my email address <a
+                        style="color: black;">touutae@pantakan.com</a> or my social
+                    profiles.
+                </p>
+                <a href="mailto:touutae@pantakan.com" class="cta-btn cta-btn--resume">Send Me Email</a>
             </div>
         </div>
     </section>
@@ -237,38 +222,51 @@ Have fun creating your portfolio on this template!!! -->
                 <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
             </a>
             <div class="social-links">
-                <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                <a href="https://twitter.com/iamtouutae" target="_blank" rel="iamtouutae" aria-label="twitter">
                     <i class="fa fa-twitter"></i>
                 </a>
-                <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                <a href="https://www.instagram.com/Touutae/" target="_blank" rel="Touutae" aria-label="instagram">
                     <i class="fa fa-instagram"></i>
                 </a>
-                <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="codepen">
-                    <i class="fa fa-codepen"></i>
-                </a>
-                <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                <a href="https://www.linkedin.com/in/pantakan-kanprawet-66239720b/" target="_blank"
+                    rel="Pantakan Kanprawet" aria-label="linkedin">
                     <i class="fa fa-linkedin"></i>
                 </a>
-                <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="github">
+                <a href="https://github.com/Touutae-lab" target="_blank" rel="Touutae-lab" aria-label="github">
                     <i class="fa fa-github"></i>
                 </a>
             </div>
             <hr />
             <p class="footer__text">
-                &copy; <span id="year"></span> - Template by
-                <a href="https://github.com/AnilSeervi" target="_blank" rel="noopener noreferrer">Anil Seervi</a>.
-                <br />Made
-                with &hearts;
+                &copy; <span id="year"></span> - Edited
+                <a href="https://github.com/Touutae-lab" target="_blank" rel="Touutae-lab">Touutae-lab</a>.
             </p>
         </div>
     </footer>
     <!-- END Footer Section -->
 
+    <!-- POPUP -->
+    <div class="popup">
+        <div class="popup__content">
+            <div class="popup__get-in-touch">
+                FOLLOW ME
+            </div>
+        </div>
+    </div>
+    <!-- END POPUP -->
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById('year').textContent =
+            new Date().getFullYear()
+        document.getElementById("__about").addEventListener('click', function () {
+            document.getElementById("navi-toggle").checked = false;
+        })
+        document.getElementById("__project").addEventListener('click', function () {
+            document.getElementById("navi-toggle").checked = false;
+        })
+        document.getElementById("__contact").addEventListener('click', function () {
+            document.getElementById("navi-toggle").checked = false;
+        })
     </script>
-    <script src="./javascript/vanilla-tilt.min.js"></script>
-    <script type="text/javascript" src="./javascript/valtilt.js"></script>
 </body>
 
 </html>
