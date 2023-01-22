@@ -630,6 +630,9 @@ section {
   top: 0;
   transform: rotate(-135deg); }
 
+.navigation__visible {
+  opacity: 0; }
+
 .popup {
   height: 100vh;
   position: fixed;

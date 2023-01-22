@@ -146,4 +146,8 @@
         top: 0;
         transform: rotate(-135deg);
     }
+
+    &__visible {
+        opacity: 0;
+    }
 }
