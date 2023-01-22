@@ -4,7 +4,8 @@
   "description": "A personal website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass ./sass/main.scss ./style.css"
+    "compile:sass": "node-sass ./style/main.scss ./style.css",
+    "lint": ""
   },
   "repository": {
     "type": "git",
