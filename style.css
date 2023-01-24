@@ -676,13 +676,23 @@ section {
       display: block;
       font-size: 6rem;
       font-weight: 400; }
+      @media (max-width: 56.25em) {
+        .popup__title--main {
+          font-size: 2rem; } }
       @media (max-width: 37.5em) {
         .popup__title--main {
-          font-size: 3rem; } }
+          font-size: 1.5rem; } }
     .popup__title--sub {
       display: block;
       font-size: 2rem;
       font-weight: 700; }
       @media (max-width: 37.5em) {
         .popup__title--sub {
-          font-size: 0.5rem; } }
+          font-size: 1rem; } }
+      @media (max-width: 56.25em) {
+        .popup__title--sub {
+          font-size: 1rem; } }
+  @media (max-width: 37.5em) {
+    .popup__icon {
+      width: 3rem;
+      height: 2rem; } }
