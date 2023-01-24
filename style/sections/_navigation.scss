@@ -25,7 +25,7 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient($secondary-color, $primary-color);
+        background-image: radial-gradient($primary-color, $secondary-color);
         z-index: 1000;
 
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -72,6 +72,7 @@
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $white-color 50%);
             background-size: 220%;
             transition: all .4s;
+            border-bottom: 0.2rem solid;
         }
 
         &:hover,
