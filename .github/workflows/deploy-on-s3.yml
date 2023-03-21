@@ -12,14 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout
+        uses: actions/checkout@v3
       
       - name: Set up python
         uses: actions/python@v3
         with:
           python-version: '3.x'
+
       - name: Install AWS CLI
-        uses: |
+        run: |
           pip install awscli
         
       - name: Configure credential
@@ -37,4 +38,4 @@ jobs:
         run: |
           aws s3 cp ./index.html s3://$AWS_S3_BUCKET/
           aws s3 cp ./style.css s3://$AWS_S3_BUCKET/
-          aws s3 sync ./assets s3://$AWS_S3_BUCKET/
+          aws s3 sync ./assets s3://$AWS_S3_BUCKET/assets
