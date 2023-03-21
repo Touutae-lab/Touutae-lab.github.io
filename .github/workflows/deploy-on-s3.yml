@@ -37,6 +37,6 @@ jobs:
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         run: |
-          aws s3 cp ./index.html s3://$AWS_S3_BUCKET/
-          aws s3 cp ./style.css s3://$AWS_S3_BUCKET/
-          aws s3 sync ./assets s3://$AWS_S3_BUCKET/assets
+          aws s3 cp ./index.html s3://$AWS_S3_BUCKET/ --acl public-read
+          aws s3 cp ./style.css s3://$AWS_S3_BUCKET/ --acl public-read
+          aws s3 sync ./assets s3://$AWS_S3_BUCKET/assets --acl public-read
