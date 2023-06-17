@@ -10,296 +10,398 @@ Have fun creating your portfolio on this template!!! -->
 
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title: add your Portfolio websites's title here -->
+        <title>Pantakan Kanprawet | DevOps</title>
 
-    <!-- Title: add your Portfolio websites's title here -->
-    <title>Pantakan Kanprawet | DevOps </title>
+        <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+        <meta
+            name="keywords"
+            content="Software Engineer, Pantakan Kanprawet, skill"
+        />
 
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="DevOps, Pantakan Kanprawet, skill" />
+        <!-- Improve your SEO by adding a small descrption of you -->
+        <meta name="description" content="Pantakan Kanprawet | Developer" />
 
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="Pantakan Kanprawet | Developer" />
+        <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+        <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
 
-    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
-    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+        <!-- Add your primary-theme color for the value of content -->
+        <meta name="theme-color" content="#36d1dc" />
 
-    <!-- Add your primary-theme color for the value of content -->
-    <meta name="theme-color" content="#36d1dc" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <!-- Fill content with the URL of this portfolio you'll host -->
-    <meta property="og:url" content="https://pantakan.com/" />
-    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-    <meta property="og:title" content="Pantakan Kanprawet | Developer" />
-    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta property="og:description" content="Pantakan Kanprawet's Personal website" />
-    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <!-- Fill content with the URL of this portfolio you'll host -->
+        <meta property="og:url" content="https://pantakan.com/" />
+        <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+        <meta property="og:title" content="Pantakan Kanprawet | Developer" />
+        <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+        <meta
+            property="og:description"
+            content="Pantakan Kanprawet's Personal website"
+        />
+        <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
       so that a thumbnail image of your portfolio is shown while shared on other platform -->
-    <meta property="og:image" content="./assets/thumbnail.png" />
+        <meta property="og:image" content="./assets/thumbnail.png" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <!-- Again fill content attr with the URL of this portfolio you'll host -->
-    <meta property="twitter:url" content="www.pantakan.com" />
-    <!-- Recommended to use the same text used within <title> element -->
-    <meta property="twitter:title" content="Pantakan Kanprawet | Developer" />
-    <!-- short description that shows up while your portfolio is shared -->
-    <meta property="twitter:description" content="Patakan Kanprawet Blogs" />
-    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
-    <meta property="twitter:image" content="./assets/thumbnail.png" />
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <!-- Again fill content attr with the URL of this portfolio you'll host -->
+        <meta property="twitter:url" content="www.pantakan.com" />
+        <!-- Recommended to use the same text used within <title> element -->
+        <meta
+            property="twitter:title"
+            content="Pantakan Kanprawet | Developer"
+        />
+        <!-- short description that shows up while your portfolio is shared -->
+        <meta
+            property="twitter:description"
+            content="Patakan Kanprawet Blogs"
+        />
+        <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+        <meta property="twitter:image" content="./assets/thumbnail.png" />
 
-    <!-- link tags -->
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- link tags -->
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
 
-</head>
-
-<body>
-    <!-- Navigation -->
-    <div class="navigation">
-        <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon"><text class="navigation__visible">HI</text></span>
-        </label>
-        <input id="navi-toggle" type="checkbox" class="navigation__checkbox">
-        <div class="navigation__background">&nbsp;</div>
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li id="__about" class="navigation__item"><a href="#about" class="navigation__link">About Me</a></li>
-                <li id="__project" class="navigation__item"><a href="#projects" class="navigation__link">Project</a>
-                </li>
-                <li class="navigation__item"><a href="https://www.pantakan.com/Touutae-lab/"
-                        class="navigation__link">Resume</a></li>
-                <li id="__contact" class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!-- Hero Section -->
-    <div id="hero">
-        <section class="container">
-            <h1 class="hero-title">
-                Hi, my name is
-                <span class="text-color-main name">Patakan Kanprawet</span>
-                <br />
-                I'm the Junior Software Engineer.
-            </h1>
-            <p class="hero-cta">
-                <a class="cta-btn cta-btn--hero" href="#popup">Get in touch</a>
-            </p>
-        </section>
-        <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-            <div class="scroll-down"></div>
-        </a>
-    </div>
-    <!-- /END Hero Section -->
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="row about-wrapper">
-                <div class="about-wrapper__image">
-                    <img class="img-fluid" src="./assets/profile.jpg" alt="Profile Image" />
-                </div>
-                <div class="about-wrapper__info">
-                    <div class="about-wrapper__info-text-wrapper">
-                        <p class="about-wrapper__info-text">
-                            Welcome to my personal website! My name is Pantakan Kanprawet and I am a developer from
-                            Thailand. I
-                            hold a degree in Computer Science from Chiang Mai University and have been study in the
-                            field
-                            for several years.
-
-                        </p>
-                        <p class="about-wrapper__info-text">
-                            As a developer, I specialize in DevOps & Automation and I am dedicated to creating
-                            innovative
-                            and efficient solutions for clients. I am passionate about technology and always strive
-                            to
-                            stay
-                            up-to-date with the latest developments in the field.
-                            On this website, you'll find my portfolio, blog, and contact information. Feel free to
-                            take
-                            a
-                            look around and reach out to me if you're interested in working together. Thank you for
-                            visiting!
-                        </p>
-                    </div>
-                    <span class="about-wrapper__cta">
-                        <a href="https://www.pantakan.com/Touutae-lab" target="_blank"
-                            class="cta-btn cta-btn--resume">View Resume</a>
-                    </span>
-                </div>
-            </div>
+    <body>
+        <!-- Navigation -->
+        <div class="navigation">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon"
+                    ><text class="navigation__visible">HI</text></span
+                >
+            </label>
+            <input
+                id="navi-toggle"
+                type="checkbox"
+                class="navigation__checkbox"
+            />
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li id="__about" class="navigation__item">
+                        <a href="#about" class="navigation__link">About Me</a>
+                    </li>
+                    <li id="__project" class="navigation__item">
+                        <a href="#projects" class="navigation__link">Project</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a
+                            href="https://www.pantakan.com/Touutae-lab/"
+                            class="navigation__link"
+                            >Resume</a
+                        >
+                    </li>
+                    <li id="__contact" class="navigation__item">
+                        <a href="#contact" class="navigation__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    <!-- /END About Section -->
-
-    <!--Projects Section-->
-    <section id="projects">
-        <div class="container">
-            <div class="project-wrapper">
-                <h2 class="section-title dark-blue-text">Projects</h2>
-
-                <!-- Each .row is a project -->
-                <article class="row">
-                    <div class="project-wrapper__text">
-                        <h3 class="project-wrapper__text-title">
-                            Touutae-lab.github.io
-                        </h3>
-                        <p class="project-wrapper__text-info">
-                            This project is My website resume, i have use GitHub page for deployment also using
-                            Github Action to automate deploy on Amazon AWS S3 Static HTML display.
-                        </p>
-                        <div class="project-wrapper__text-btns">
-                            <a href="https://github.com/Touutae-lab/Touutae-lab.github.io" target="_blank"
-                                rel="Jenkins-DockerCompose" class="cta-btn cta-btn--hero cta-btn--projects">Source
-                                code</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="row">
-                    <div class="project-wrapper__text">
-                        <h3 class="project-wrapper__text-title">
-                            Peachy-Themes
-                        </h3>
-                        <p class="project-wrapper__text-info">
-                            Pastel Pink and Peach Visual Studio theme, I making this because i love pastel pink,
-                            this themes can bring you good experience while working for sure.
-                        </p>
-                        <div class="project-wrapper__text-btns">
-                            <a href="https://github.com/Touutae-lab/Peachy-themes" target="_blank" rel="Peachy-Themes"
-                                class="cta-btn cta-btn--hero cta-btn--projects">Source
-                                code</a>
-                            <a href="https://marketplace.visualstudio.com/items?itemName=Piros-k.peachy-themes"
-                                target="_blank" class="cta-btn text-color-main">Marketplace</a>
-
-                        </div>
-                    </div>
-                </article>
-
-                <!-- /END Project -->
-                <article class="row">
-                    <div class="project-wrapper__text">
-                        <h3 class="project-wrapper__text-title">
-                            FastGraduation-DockerCompose
-                        </h3>
-                        <p class="project-wrapper__text-info">
-                            This is most largest project for me, i have manage project as a first scrum while 
-                            implement some software stack to it, such as Docker as Developments environment
-                            with python back-end and nextjs, typescript front-end.
-                        </p>
-                        <div class="project-wrapper__text-btns">
-                            <a href="https://github.com/Touutae-lab/FastGraduation-DockerCompose" target="_blank"
-                                rel="FastGraduation-DockerCompose"
-                                class="cta-btn cta-btn--hero cta-btn--projects">Source
-                                code</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="row">
-                    <div class="project-wrapper__text">
-                        <h3 class="project-wrapper__text-title">
-                            For more projects like this, visit my GitHub profile.
-                        </h3>
-                        <div class="project-wrapper__text-btns">
-                            <a href="https://www.github.com/Touutae-lab/" target="_blank"
-                                class="cta-btn text-color-main">Visit
-                                GitHub</a>
-
-                        </div>
-
-                    </div>
-                </article>
-            </div>
-        </div>
-
-    </section>
-    <!-- End Projects Section -->
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-wrapper">
-                <p class="contact-wrapper__text">
-                    To contact me, please consider using my email address <a
-                        style="color: black;">touutae@pantakan.com</a> or my social
-                    profiles.
+        <!-- Hero Section -->
+        <div id="hero">
+            <section class="container">
+                <h1 class="hero-title">
+                    Hi, my name is
+                    <span class="text-color-main name">Patakan Kanprawet</span>
+                    <br />
+                    I'm Software Engineer.
+                </h1>
+                <p class="hero-cta">
+                    <a class="cta-btn cta-btn--hero" href="#popup"
+                        >Get in touch</a
+                    >
                 </p>
-                <a href="mailto:touutae@pantakan.com" class="cta-btn cta-btn--resume">Send Me Email</a>
-            </div>
-        </div>
-    </section>
-    <!-- END Contact Section -->
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <a href="#hero" class="back-to-top" aria-label="go back to top">
-                <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+            </section>
+            <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+                <div class="scroll-down"></div>
             </a>
-            <div class="social-links">
-                <a href="https://twitter.com/iamtouutae" target="_blank" rel="iamtouutae" aria-label="twitter">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/Touutae/" target="_blank" rel="Touutae" aria-label="instagram">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/pantakan-kanprawet-66239720b/" target="_blank"
-                    rel="Pantakan Kanprawet" aria-label="linkedin">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/Touutae-lab" target="_blank" rel="Touutae-lab" aria-label="github">
-                    <i class="fa fa-github"></i>
-                </a>
-            </div>
-            <hr />
-            <p class="footer__text">
-                &copy; <span id="year"></span> - Edited
-                <a href="https://github.com/Touutae-lab" target="_blank" rel="Touutae-lab">Touutae-lab</a>.
-            </p>
         </div>
-    </footer>
-    <!-- END Footer Section -->
+        <!-- /END Hero Section -->
 
-    <!-- POPUP -->
-    <div class="popup" id="popup">
-        <div class="popup__content">
-            <a href="#" class="popup__close">&times;</a>
-            <div class="popup__get-in-touch">
-                <h2 class="popup__title--main">Let's start our conversation</h2>
-                <h3 class="popup__title--sub">Please reach out to me through the contact form below
-                </h3>
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="row about-wrapper">
+                    <div class="about-wrapper__image">
+                        <img
+                            class="img-fluid"
+                            src="./assets/profile.jpg"
+                            alt="Profile Image"
+                        />
+                    </div>
+                    <div class="about-wrapper__info">
+                        <div class="about-wrapper__info-text-wrapper">
+                            <p class="about-wrapper__info-text">
+                                Welcome to my personal website! My name is
+                                Pantakan Kanprawet and I am a developer from
+                                Thailand. I hold a degree in Computer Science
+                                from Chiang Mai University and have been study
+                                in the field for several years.
+                            </p>
+                            <p class="about-wrapper__info-text">
+                                Hi there! I'm a developer who really loves
+                                digging into Cloud Native Architecture and
+                                Database Automation. I get a kick out of coming
+                                up with clever, efficient solutions that make
+                                our clients' lives easier. Technology, to me,
+                                isn't just a job – it's a passion. I make it my
+                                mission to keep up with the latest in the field
+                                so I can provide the most up-to-date and
+                                innovative solutions possible. Take a look
+                                around my website. You'll find my portfolio
+                                where I showcase some of the cool projects I've
+                                worked on, as well as my blog where I share
+                                thoughts, ideas, and insights. 
+                            </p>
+                        </div>
+                        <span class="about-wrapper__cta">
+                            <a
+                                href="https://www.pantakan.com/Touutae-lab"
+                                target="_blank"
+                                class="cta-btn cta-btn--resume"
+                                >View Resume</a
+                            >
+                        </span>
+                    </div>
+                </div>
             </div>
-            <a class="popup__icon" href="https://www.linkedin.com/in/pantakan-kanprawet-66239720b/"><img
-                    src="./assets/linkedin-ar21.svg" alt="linkedin"></a>
-            <a class="popup__icon" href=" https://twitter.com/iamtouutae"><img src="./assets/twitter-ar21.svg"
-                    alt="twitter"></a>
-            <a class="popup__icon" href="https://www.instagram.com/touutae/"><img src="./assets/instagram-ar21.svg"
-                    alt="instagram"></a>
-        </div>
-    </div>
-    <!-- END POPUP -->
-    <script>
-        document.getElementById('year').textContent =
-            new Date().getFullYear()
-        document.getElementById("__about").addEventListener('click', function () {
-            document.getElementById("navi-toggle").checked = false;
-        })
-        document.getElementById("__project").addEventListener('click', function () {
-            document.getElementById("navi-toggle").checked = false;
-        })
-        document.getElementById("__contact").addEventListener('click', function () {
-            document.getElementById("navi-toggle").checked = false;
-        })
-    </script>
-</body>
+        </section>
+        <!-- /END About Section -->
 
+        <!--Projects Section-->
+        <section id="projects">
+            <div class="container">
+                <div class="project-wrapper">
+                    <h2 class="section-title dark-blue-text">Projects</h2>
+
+                    <!-- Each .row is a project -->
+                    <article class="row">
+                        <div class="project-wrapper__text">
+                            <h3 class="project-wrapper__text-title">
+                                Touutae-lab.github.io
+                            </h3>
+                            <p class="project-wrapper__text-info">
+                                This project is My website resume, i have use
+                                GitHub page for deployment also using Github
+                                Action to automate deploy on Amazon AWS S3
+                                Static HTML display.
+                            </p>
+                            <div class="project-wrapper__text-btns">
+                                <a
+                                    href="https://github.com/Touutae-lab/Touutae-lab.github.io"
+                                    target="_blank"
+                                    rel="Jenkins-DockerCompose"
+                                    class="cta-btn cta-btn--hero cta-btn--projects"
+                                    >Source code</a
+                                >
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="row">
+                        <div class="project-wrapper__text">
+                            <h3 class="project-wrapper__text-title">
+                                Peachy-Themes
+                            </h3>
+                            <p class="project-wrapper__text-info">
+                                Pastel Pink and Peach Visual Studio theme, I
+                                making this because i love pastel pink, this
+                                themes can bring you good experience while
+                                working for sure.
+                            </p>
+                            <div class="project-wrapper__text-btns">
+                                <a
+                                    href="https://github.com/Touutae-lab/Peachy-themes"
+                                    target="_blank"
+                                    rel="Peachy-Themes"
+                                    class="cta-btn cta-btn--hero cta-btn--projects"
+                                    >Source code</a
+                                >
+                                <a
+                                    href="https://marketplace.visualstudio.com/items?itemName=Piros-k.peachy-themes"
+                                    target="_blank"
+                                    class="cta-btn text-color-main"
+                                    >Marketplace</a
+                                >
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- /END Project -->
+                    <article class="row">
+                        <div class="project-wrapper__text">
+                            <h3 class="project-wrapper__text-title">
+                                FastGraduation-DockerCompose
+                            </h3>
+                            <p class="project-wrapper__text-info">
+                                This is most largest project for me, i have
+                                manage project as a first scrum while implement
+                                some software stack to it, such as Docker as
+                                Developments environment with python back-end
+                                and nextjs, typescript front-end.
+                            </p>
+                            <div class="project-wrapper__text-btns">
+                                <a
+                                    href="https://github.com/Touutae-lab/FastGraduation-DockerCompose"
+                                    target="_blank"
+                                    rel="FastGraduation-DockerCompose"
+                                    class="cta-btn cta-btn--hero cta-btn--projects"
+                                    >Source code</a
+                                >
+                            </div>
+                        </div>
+                    </article>
+                    <article class="row">
+                        <div class="project-wrapper__text">
+                            <h3 class="project-wrapper__text-title">
+                                For more projects like this, visit my GitHub
+                                profile.
+                            </h3>
+                            <div class="project-wrapper__text-btns">
+                                <a
+                                    href="https://www.github.com/Touutae-lab/"
+                                    target="_blank"
+                                    class="cta-btn text-color-main"
+                                    >Visit GitHub</a
+                                >
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- End Projects Section -->
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-wrapper">
+                    <p class="contact-wrapper__text">
+                        To contact me, please consider using my email address
+                        <a style="color: black">touutae@pantakan.com</a> or my
+                        social profiles.
+                    </p>
+                    <a
+                        href="mailto:touutae@pantakan.com"
+                        class="cta-btn cta-btn--resume"
+                        >Send Me Email</a
+                    >
+                </div>
+            </div>
+        </section>
+        <!-- END Contact Section -->
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <a href="#hero" class="back-to-top" aria-label="go back to top">
+                    <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+                </a>
+                <div class="social-links">
+                    <a
+                        href="https://twitter.com/iamtouutae"
+                        target="_blank"
+                        rel="iamtouutae"
+                        aria-label="twitter"
+                    >
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/Touutae/"
+                        target="_blank"
+                        rel="Touutae"
+                        aria-label="instagram"
+                    >
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/pantakan-kanprawet-66239720b/"
+                        target="_blank"
+                        rel="Pantakan Kanprawet"
+                        aria-label="linkedin"
+                    >
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a
+                        href="https://github.com/Touutae-lab"
+                        target="_blank"
+                        rel="Touutae-lab"
+                        aria-label="github"
+                    >
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+                <hr />
+                <p class="footer__text">
+                    &copy; <span id="year"></span> - Edited
+                    <a
+                        href="https://github.com/Touutae-lab"
+                        target="_blank"
+                        rel="Touutae-lab"
+                        >Touutae-lab</a
+                    >.
+                </p>
+            </div>
+        </footer>
+        <!-- END Footer Section -->
+
+        <!-- POPUP -->
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <a href="#" class="popup__close">&times;</a>
+                <div class="popup__get-in-touch">
+                    <h2 class="popup__title--main">
+                        Let's start our conversation
+                    </h2>
+                    <h3 class="popup__title--sub">
+                        Please reach out to me through the contact form below
+                    </h3>
+                </div>
+                <a
+                    class="popup__icon"
+                    href="https://www.linkedin.com/in/pantakan-kanprawet-66239720b/"
+                    ><img src="./assets/linkedin-ar21.svg" alt="linkedin"
+                /></a>
+                <a class="popup__icon" href=" https://twitter.com/iamtouutae"
+                    ><img src="./assets/twitter-ar21.svg" alt="twitter"
+                /></a>
+                <a class="popup__icon" href="https://www.instagram.com/touutae/"
+                    ><img src="./assets/instagram-ar21.svg" alt="instagram"
+                /></a>
+            </div>
+        </div>
+        <!-- END POPUP -->
+        <script>
+            document.getElementById('year').textContent =
+                new Date().getFullYear()
+            document
+                .getElementById('__about')
+                .addEventListener('click', function () {
+                    document.getElementById('navi-toggle').checked = false
+                })
+            document
+                .getElementById('__project')
+                .addEventListener('click', function () {
+                    document.getElementById('navi-toggle').checked = false
+                })
+            document
+                .getElementById('__contact')
+                .addEventListener('click', function () {
+                    document.getElementById('navi-toggle').checked = false
+                })
+        </script>
+    </body>
 </html>

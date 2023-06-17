@@ -9,7 +9,6 @@
 ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 */
 @mixin respond($breakpoint) {
-
     // Phone-xs
     @if $breakpoint ==phone-xs {
         @media (max-width: 20em) {
@@ -71,9 +70,11 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     -webkit-text-fill-color: $secondary-color; // fallback
 
     @supports (background-clip: text) or (-webkit-background-clip: text) {
-        background-image: linear-gradient(135deg,
-                $primary-color 0%,
-                $secondary-color 100%);
+        background-image: linear-gradient(
+            135deg,
+            $primary-color 0%,
+            $secondary-color 100%
+        );
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -82,10 +83,9 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 }
 
 @mixin supportIE11 {
-
     // Provide your basic styles to support IE11
     @media screen and (-ms-high-contrast: active),
-    screen and (-ms-high-contrast: none) {
+        screen and (-ms-high-contrast: none) {
         @content;
     }
 }
